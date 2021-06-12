@@ -4,6 +4,8 @@
 
 Team Members:Shreya Sajal,Vineet Agarwal,Saman Ghous,Siddharth Shankar Pandey,Rishika Patwa
 
+Project-Deployment: https://predictin-deployment.herokuapp.com/
+
 ## Aim:
 Often important linkedin posts by organizations don’t get the required reach due to poor post designing or use of inaccurate community hashtags.Our project, PredictIn aims at solving this problem by predicting a popularity score for a post beforehand and help the organizations in designing the posts in an effective way that maximizes their popularity.
 
