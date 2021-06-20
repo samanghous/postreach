@@ -75,13 +75,16 @@ def result():
     arr=np.array([ [followers,article,document,image,poll,text,video ,achievement, call_to_action, insights, job_opening, other,num_hashtags,num_links,contlen] ])
     X_test = pd.DataFrame(arr,columns=[ 'followers', 'article', 'document', 'image', 'poll', 'text', 'video', 'achievement', 'call to action', 'insights', 'job opening', 'other', 'num_hashtags', 'num_links','contlen'])
     
-    post_reach = reg.predict(X_test)
-    post_reach=post_reach[0]
+    post_impressions = reg.predict(X_test)
+    post_impressions=post_impressions[0]
    
-    post_reach=round(float(post_reach),4) 
+     
     
+    import math
+    post_impressions=math.exp( post_impressions )
+    post_impressions=round(float(post_impressions)) 
 
-    return render_template('result.html', post_reach=post_reach  )        
+    return render_template('result.html', post_impressions=post_impressions  )        
 
 
 
