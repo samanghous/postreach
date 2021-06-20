@@ -7,7 +7,7 @@ Team Members:Shreya Sajal,Vineet Agarwal,Saman Ghous,Siddharth Shankar Pandey,Ri
 Project-Deployment: https://predictin-deployment.herokuapp.com/
 
 ## Aim:
-Often important linkedin posts by organizations don’t get the required reach due to poor post designing or use of inaccurate community hashtags.Our project, PredictIn aims at solving this problem by predicting a popularity score for a post beforehand and help the organizations in designing the posts in an effective way that maximizes their popularity.
+Often important linkedin posts by organizations don’t get the required reach due to poor post designing or use of inaccurate community hashtags.Our project, PredictIn aims at solving this problem by predicting reach i.e total impressions in linkedin community for a post beforehand and help the organizations in designing the posts in an effective way that maximizes their reach .
 
 # DEMO
 
@@ -19,9 +19,9 @@ https://user-images.githubusercontent.com/58565264/119225905-1cb87700-bb24-11eb-
 
 
 ## Working Approach:
-* After the data was collected ,a popularity metric using the features( Number of followers,company size,post content,number of likes,number of comments,length of post,type of post,number of hashtags) was made.These were made after proper research on LinkedIn metrics .
+* After the data was collected major variables which could affect post's reach was then shortlisted and processed. 
  
-* The most suitable Machine learning model with proper hyperparameter tuning was then fitted on our training set and used to predict the popularity score of any test post.
+* The most suitable Machine learning model which was votingRegressor i.e combination of various regressor, with proper hyperparameter tuning was then used to fit our training set and used to predict the reach of any test post.
  
 * The model was then deployed.
  
