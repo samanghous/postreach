@@ -1,13 +1,11 @@
 
 
-![Screenshot (110)](https://user-images.githubusercontent.com/58565264/119225748-5d63c080-bb23-11eb-9bc3-a6775ed13e5b.png)
-
-Team Members:Shreya Sajal,Vineet Agarwal,Saman Ghous,Siddharth Shankar Pandey,Rishika Patwa
+Creator: Saman Ghous
 
 Project-Deployment: https://predictin-deployment.herokuapp.com/
 
 ## Aim:
-Often important linkedin posts by organizations don’t get the required reach due to poor post designing or use of inaccurate community hashtags.Our project, PredictIn aims at solving this problem by predicting reach i.e total impressions in linkedin community for a post beforehand and help the organizations in designing posts in an effective way that maximizes their reach .
+Often important linkedin posts by organizations don’t get the required reach due to poor post designing or use of inaccurate community hashtags.This project, Linkedin Post Reach Predictor aims at solving this problem by predicting reach i.e total impressions in linkedin community for a post beforehand and help the organizations in designing posts in an effective way that maximizes their reach.
 
 # DEMO
 

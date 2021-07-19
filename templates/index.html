@@ -27,7 +27,7 @@
 	    <div class="header_div">
 	    	<div id="menubar"> 
 		    	<span>&nbsp <a href="{{ url_for('index') }}">Project</a> &nbsp</span>|
-		    	<span>&nbsp <a href="{{ url_for('aboutus') }}">About us</a> &nbsp</span>|
+		    	<span>&nbsp <a href="{{ url_for('aboutme') }}">About Me</a> &nbsp</span>|
 		    	<span>&nbsp 
 			    	<a href="https://www.iitg.ac.in/stud/gymkhana/technical/home/CnAHome.html" target="_blank">
 			    	CNA Club
@@ -36,10 +36,10 @@
 	    	</div>
 	    	<img src="../static/img/cna.jpeg" alt="cna logo"  id="cna_logo">
 		<div id="headline_div">
-			<h1 style="color:#bd9841"> Predictin - Predict your post's reach on Linkedin </h1>
+			<h1 style="color:#bd9841">  Linkedin Post Reach Predictor </h1>
 		</div>
 		<div id="headline_div_details" >
-			<p style="color:#fff28e"> - A project by members of CNA Club, IIT Guwahati </p>
+			<p style="color:#fff28e"> - By Saman Ghous </p>
 		</div>
 	    </div>
 	</header>    
@@ -57,11 +57,12 @@
     			</h2> 
     			<ol>
     				<li> Data was fetched from various linked posts </li>
-	    			<li> A detailed analysis of data of several linkedin posts was done  </li>
-	    			<li>Data was further cleaned and certain tagging on data was done based on sentiment analysis</li>
+	    			<li> A detailed analysis of data of several linkedin posts was done </li>
+	    			<li>Data was further cleaned and certain small corrections were done to improve quality of data e.g feature engineering,data transformation</li>
 	    			 
-	    			<li>  Further a ml model was trained based on the cleaned data  </li>
-	    			<li>  This predictor uses above ml model to find out a metric called "post reach" </li>
+	    			<li>  Further three best ml model was trained on the cleaned data  </li>
+	    			<li>  On implementing weighted voting regressor upon these three models score improved further</li>
+	    			<li>  Model was then deployed on this webpage </li>
     			</ol>
     		</div>
     		   	
@@ -302,7 +303,7 @@
 	    		 <p>Created and hosted using  <br>Css,Html,JavaScript <br>& Flask </p>
 	    </div>
 	    <div class="footer_mid">
-	    		 <p style="color:#ffd735">  &#169 CNA Club  </p>
+	    		 <p style="color:#ffd735">  &#169 Saman Ghous  </p>
 	    </div>
 	    <div class="footer_right">
 	    	<p class="p_align footer_social_media">

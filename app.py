@@ -12,9 +12,9 @@ reg = joblib.load(filename)
 def index():
     return render_template('index.html')
 
-@app.route('/aboutus')
-def aboutus():
-    return render_template('aboutus.html')  
+@app.route('/aboutme')
+def aboutme():
+    return render_template('aboutme.html')  
 
 @app.route('/result', methods = ['POST'])
 def result():
@@ -30,11 +30,15 @@ def result():
     num_links = int( request.form['num_links'] )
     num_hashtags = int( request.form['num_hastags'] )
     post_type = request.form['post_type']
+    num_hash_ratio=num_hashtags/followers
+    num_links_ratio=num_links/followers
     
     followers=np.sqrt(followers)
     num_hashtags=np.sqrt(num_hashtags)
     num_links=np.sqrt(num_links)
     contlen=np.sqrt(contlen)
+    num_hash_ratio=np.sqrt(num_hash_ratio)
+    num_links_ratio=np.sqrt(num_links_ratio)
     
     article=0
     document=0
@@ -72,14 +76,12 @@ def result():
     elif post_type=='other':
         other=1 
     
-    arr=np.array([ [followers,article,document,image,poll,text,video ,achievement, call_to_action, insights, job_opening, other,num_hashtags,num_links,contlen] ])
-    X_test = pd.DataFrame(arr,columns=[ 'followers', 'article', 'document', 'image', 'poll', 'text', 'video', 'achievement', 'call to action', 'insights', 'job opening', 'other', 'num_hashtags', 'num_links','contlen'])
+    arr=np.array([ [followers,article,document,image,poll,text,video ,achievement, call_to_action, insights, job_opening, other,num_hashtags,num_links,contlen,num_hash_ratio,num_links_ratio] ])
+    X_test = pd.DataFrame(arr,columns=[ 'followers', 'article', 'document', 'image', 'poll', 'text', 'video', 'achievement', 'call to action', 'insights', 'job opening', 'other', 'num_hashtags', 'num_links','contlen','num_hash_ratio','num_links_ratio'])
     
     post_impressions = reg.predict(X_test)
     post_impressions=post_impressions[0]
-   
-     
-    
+ 
     import math
     post_impressions=math.exp( post_impressions )
     post_impressions=round(float(post_impressions)) 
