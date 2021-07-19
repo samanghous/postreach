@@ -2,7 +2,7 @@ Project Name: Linkedin Post Reach Predictor
 
 Creator: Saman Ghous
 
-Project-Deployment: https://predictin-deployment.herokuapp.com/
+Project-Deployment : https://postreach.herokuapp.com/
 
 ## Aim:
 Often important linkedin posts by organizations don’t get the required reach due to poor post designing or use of inaccurate community hashtags.This project, Linkedin Post Reach Predictor aims at solving this problem by predicting reach i.e total impressions in linkedin community for a post beforehand and help the organizations in designing posts in an effective way that maximizes their reach.
